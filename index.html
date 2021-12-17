@@ -1,0 +1,87 @@
+<!-- C:\Users\kenda\OneDrive\Documents\VSCode Projects\Survey Form\index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Car Maintenance Survey Form</title>
+</head>
+
+<!-- Created by Kendall O'Brien 12/10/2021 -->
+
+<body>
+    <h1 id="title">Car Maintenance Survey Form</h1>
+    <p id="description">This survey will be used to determine the need for a program to help owners take better care of
+        their cars. The
+        feedback we receive will be used to determine which features should be included with our proposed application!
+        Don't worry, we don't sell your information and it will be kept completely anonymous.</h2>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" placeholder="name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" placeholder="email" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label">Mileage</label>
+            <input type="number" id="number" placeholder="mi/year" min="0" max="1000000">
+        </div>
+        <div class="form-group">
+            <label for="driver-style">What type of driver are you?</label>
+            <select name="driver-style" id="dropdown">
+                <option value="modest-driver" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Modest Driver</option>
+                <option value="middle-of-the-road" style="font-family: 'Times New Roman', Times, serif;">Middle of the Road</option>
+                <option value="pedal-to-the-metal" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Pedal to the Medal</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="oil_check_frequency">How frequently do you check your oil?</label>
+            <br>
+            <input type="radio" id="weekly" name="oil_check_frequency" value="weekly" checked>
+            <label for="weekly">Weekly</label>
+            <br>
+            <input type="radio" id="monthly" name="oil_check_frequency" value="monthly">
+            <label for="monthly">Monthly</label>
+            <br>
+            <input type="radio" id="yearly" name="oil_check_frequency" value="yearly">
+            <label for="yearly">Yearly</label>
+        </div>
+
+        <div class="form-group" id="checkbox_group">
+            <label>Please check all boxes that you would say you check "regularly", at least once per month.</label>
+            <br>
+            <input type="checkbox" id="tire_pressure" name="tire_pressure" value="Tire_Pressure">
+            <label for="tire_pressure">Tire Pressure</label>
+            <br>
+            <input type="checkbox" id="oil_level" name="oil_level" value="Oil_Level">
+            <label for="oil_level">Oil Level</label>
+            <br>
+            <input type="checkbox" id="coolant_level" name="coolant_level" value="Coolant_Level">
+            <label for="coolant_level">Coolant Level</label>
+            <br>
+            <input type="checkbox" id="brake_fluid" name="brake_fluid" value="Brake_Fluid">
+            <label for="brake_fluid">Brake Fluid</label>
+            <br>
+            <input type="checkbox" id="tire_tread" name="tire_tread" value="Tire_Tread">
+            <label for="tire_tread">Tire Tread</label>
+            <br>
+            <input type="checkbox" id="lights" name="lights" value="Lights">
+            <label for="lights">Lights</label>
+        </div>
+        <div class="form-group" id="textarea_div">
+            <label for="additional_comments" id="additional_comments_label">Additional Comments</label>
+            <textarea name="additional_comments" id="additional_comments" rows=5 cols=55></textarea>
+        </div>
+        <div id="btn_div">
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
